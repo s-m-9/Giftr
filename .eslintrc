@@ -1,0 +1,64 @@
+{
+    "parserOptions": { 
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+                "blockBindings": true,
+                "modules": false
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true 
+    },
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "complexity": ["error", 20],
+        "curly": ["error", "multi-or-nest"],
+        "default-case": "error",
+        "indent": ["error", "tab"],
+        "key-spacing": ["error", { "beforeColon": false,
+                             "afterColon": true }],
+        "new-cap": ["error", { "newIsCap": true }, { "capIsNew": true }],
+        "new-parens": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-eval": 2,
+        "no-implied-eval": 2,
+        "no-invalid-regexp": 2,
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "no-redeclare": "error",
+        "quote-props": ["error", "consistent-as-needed"],
+        "no-self-compare": "error",
+        "no-empty": 1,
+        "no-extra-parens": [1,""],
+        "no-extra-semi": 1,
+        "no-func-assign": 2,
+        "no-negated-in-lhs": 2,
+        "no-else-return": 1,
+        "no-fallthrough": 2,
+        "no-floating-decimal": 2,
+        "no-delete-var": 2,
+        "no-undef": 0,
+        "no-unreachable": "error",
+        "no-unused-vars": 0,
+        "no-use-before-define": "error",
+        "no-with": "error",
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", { "before": false, "after": true }],
+        "sort-vars": [1, { "ignoreCase": true }],
+        "space-after-keywords": [2, "always"],
+        "space-infix-ops": 1,
+        "space-unary-ops": [2, { "words": true, "nonwords": false }],
+
+        "use-isnan": 1,
+        "valid-jsdoc": 1,
+        "vars-on-top": 2,
+        "yoda": 1
+    }
+
+    
+}
+

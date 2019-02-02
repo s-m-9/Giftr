@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline' blob: cdvphotolibrary:; frame-src * gap:">
+ 
+   
+<!--   error: If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/untinyshell.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/platform.css">
+    
+    <title>Hello World</title>
+</head>
+
+<body>
+<!--
+    <nav class="bar top">
+       <p class="link right">ADD</p>
+    </nav>
+-->
+   
+    <!--   The first page is the list of people that you have added to the app along with their birthdays. Each person will have an arrow to navigate to the gift list page. The person screen will have a button to open a page to add a new person. Clicking on a person's name from the list, will also open the same page as the add button but it allows the user to edit the person instead of adding a new one.-->
+    
+    <div class="overlay-bars hidden">
+        <section class="message">
+            <h1 class="t2"></h1>
+        </section>
+    </div>
+    
+    <section class="page" id="people-list">
+        <h1 class="title">People List</h1>
+        <ul class="people-list-view">
+<!--
+            <li class="people-list-item">
+                <div class="list-text">
+                    <h1>Ollie Son</h1>
+                    <p>Feb 25, 2002</p>  
+                </div>
+                
+                <div class="list-buttons">
+                    <span class="fa fa-trash fa-lg" id="del-btn"></span>  
+                    <span class="fa fa-gift fa-2x" id="gift-btn"></span>
+                      
+                </div>
+                
+            </li>
+-->
+        </ul>
+        
+        <div class="floating-button">
+            <p class="plus">+</p>
+            
+<!--            <button id="add-btn">Add New Person</button>  -->
+        </div>
+    </section>
+    
+<!--    The list of gifts will display the idea and then optionally the other three things about the idea. If any of the other fields are empty then they are not displayed in the list. There will also be a delete button for each idea so it can be removed. If a link was included then it should be displayed as an actual link that the user can click on to visit that website.-->
+
+    <section class="page" id="gift-list">
+        <h1 class="title">Gift List</h1>
+        <ul class="gift-list-view">
+            <li>
+                <h1 class="gift-title">DAMN. Vinyl</h1>
+                <p class="gift-price">$29.99</p>
+                <p class="gift-location">Amazon</p>
+                <p><a href="#" target="_blank" class="gift-url">amazon.ca</a></p>
+                <div><button id="delete"> ⃠</button></div>
+            </li>
+            <li>
+                <h1 class="gift-title">iPhone X</h1>
+                <p class="gift-price">$1099.99</p>
+                <p class="gift-location">Apple</p>
+                <p><a href="#" target="_blank" class="gift-url">apple.ca</a></p>
+                <div><button id="delete1"> ⃠</button></div>
+            </li>
+        </ul>
+        <div class="center-button">
+            <span id="add-gift-btn">Add Gift</span>
+            <span id="back-btn">Back</span>
+        </div>
+    </section>
+    <!--    The second page will have a form that allows a user to enter a name and a date of birth. There needs to be a way to cancel this operation and go back to the person list page. When the user is adding a new person the form should start empty. When the user is editing an existing person then the details for that person should be preloaded in the form elements. Saving the person information should return the user to the person list page.-->
+    <section class="page" id="form">
+        <h1 class="title">Person Form</h1>
+        <form>
+            <div class="form-row">
+                <input type="text"  placeholder="Full Name" data-id="" name="name" id="name">
+            </div>
+            <div class="form-row" id="dob-row">
+<!--                <label for="dob">Date of Birth</label>-->
+<!--                <input type="date" name="dob" id="dob">-->
+                <input type="number" pattern="[0-9]*" onkeypress="if(this.value.length==2) return false;" placeholder="MM" name="dob" id="MM">
+                <input type="number" pattern="[0-9]*" onkeypress="if(this.value.length==2) return false;" placeholder="DD" name="dob" id="DD">
+                <input type="number" pattern="[0-9]*" onkeypress="if(this.value.length==4) return false;" placeholder="YYYY" name="dob" id="YYYY">
+            </div>
+            <div class="center-button">
+                <span id="form-save">Save</span> 
+                <span id="form-cancel">Cancel</span>
+            </div>
+        </form>
+    </section>
+
+    <!--    On the gift page there will be a button for adding a new idea to the list. The fourth page, for adding gifts, will ask for 
+                        the idea, 
+                        the location where it can be bought, 
+                        a URL where it can be found online, 
+                        and a price. 
+    -->
+    <section class="page" id="add-gift">
+        <h1 class="title">Add New Gift</h1>
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Gift Idea" name="idea" id="idea">
+            </div>
+            <div class="form-row">
+                <input type="number" pattern="[0-9]*" placeholder="Price" name="price" id="price">
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="Location" name="location" id="location">
+            </div>
+            <div class="form-row">
+                <input type="url" placeholder="URL" name="url" id="url">
+            </div>
+            <div class="center-button">
+                <span id="add-save">Save</span> 
+                <span id="add-cancel">Cancel</span>
+            </div>
+        </form>
+    </section>
+
+    <!--    All the data needs to be saved on the web server through using the API.-->
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

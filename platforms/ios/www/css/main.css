@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700");
+html {
+  font-family: "Fira Sans", ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  /* default for whole page */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", ‘Trebuchet MS’, Helvetica, sans-serif;
+  /* serif for the headings */
+}
+
+body {
+  background-color: #F7F7FF;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #F7F7FF;
+  padding: 0.5rem;
+  margin: 0.55rem 0;
+  width: 100%;
+  margin-left: -25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hidden {
+    display: none;   
+}
+
+
+
+
+
+
+
+/***********************************************
+                SPECIAL
+***********************************************/
+/***********************************************
+                LAYOUT
+***********************************************/
+.page {
+  position: relative;
+  padding: 30px;
+  padding-bottom: 90px;
+  background-color: #565254;
+    /*    9C0D38
+        3F826D   
+    704C5E
+*/
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: none;
+  /*    position: absolute;*/
+  /*    width: 100%;*/
+  min-height: 100vh;
+  display: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.page.active {
+  background-color: #607B7D;
+  display: block;
+  z-index: 100;
+  opacity: 1;
+  /*        #E54B4B */
+}
+
+/***********************************************
+                NAVIGATION
+***********************************************/
+
+
+.people-list-view button {
+  width: 25%;
+}
+
+.gift-list-view button {
+  width: 20%;
+  background-color: #E54B4B;
+  box-shadow: 0px 5px 0px 0px #BC3E3E;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+
+
+/***********************************************
+                CONTENT
+***********************************************/
+.title {
+  color: #F7F7FF;
+  text-align: center;
+}
+
+.people-list-item {
+  min-height: 80px;
+}
+
+.list-text {
+  width: 80%;
+  float: left;
+}
+
+.list-buttons {
+  width: 15%;
+  float: right;
+}
+.list-buttons span:first-child {
+  margin-left: 45%;
+}
+.list-buttons span:last-child {
+  margin-top: 100%;
+  margin-left: 20%;
+}
+
+.people-list-view li {
+  padding-bottom: 25px;
+}
+
+.gift-list-view p {
+  margin: 0.5rem 0;
+}
+
+.form-row {
+  background-color: #F7F7FF;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.form-row:first-child {
+  text-align: center;
+  margin-top: 0;
+}
+.form-row:nth-child(2), .form-row:nth-child(3), .form-row:nth-child(4) {
+  text-align: center;
+}
+
+.form-row:nth-child(4) {
+    margin-bottom: 30px
+}
+
+#dob-row {
+    margin-bottom: 30px  
+}
+
+label {
+  font-family: "Fira Sans", ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  margin-right: 50%;
+}
+
+input {
+  width: 78%;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding: 10px;
+  font-size: 25px;
+}
+#dob-row input[type="number"] {
+  font-family: "Fira Sans", ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  padding: 10px;
+  font-size: 25px;
+  width: 20%;
+  text-align: center;
+}
+
+#gift-list p {
+  text-align: center;
+}
+#gift-list div {
+  text-align: center;
+}
+#gift-list li {
+  border-bottom: solid #64B6AC 10px;
+}
+
+.people-list-view h1 {
+  margin-bottom: 0;
+}
+.people-list-view p {
+  margin-top: 0.5rem;
+}
+
+.gift-title {
+  color: black;
+  text-align: center;
+}
+
+.gift-price {
+  font-weight: 700;
+}
+
+.gift-url {
+  /*    text-decoration-line: none;*/
+  text-align: center;
+  color: #777;
+}
+
+
+
+
+
+/* IOS PART */
+
+/***********************************************
+                FOOTER
+***********************************************/
+/***********************************************
+                MEDIA QUERIES
+***********************************************/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+.floating-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #64B6AC;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #45A29E;
+}
+.floating-button .plus {
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 75px;
+  font-size: 58px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.center-button {
+  text-align: center;
+  margin: auto;
+}
+
+
+#form-save, 
+#form-cancel, 
+#add-save, 
+#add-cancel, 
+#add-gift-btn, 
+#back-btn {
+  /*    background-color: #F7EF81;*/
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  font-family: "Montserrat", ‘Trebuchet MS’, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: #64B6AC;
+  box-shadow: 0px 5px 0px 0px #45A29E;
+  color: white;
+  font-size: 15px;
+  border-color: #64B6AC;
+  /*    
+  bc: #e67e22
+  shadow: #CD6509
+  */
+}

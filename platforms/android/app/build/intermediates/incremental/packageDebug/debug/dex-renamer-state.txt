@@ -1,0 +1,4 @@
+#Thu Apr 26 23:35:22 EDT 2018
+base.0=/Users/suumagai/Documents/Code/Winter/CAPP2/Assignments/Giftr/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/suumagai/Documents/Code/Winter/CAPP2/Assignments/Giftr/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700');
+body {
+    background-color: #F7F7FF;
+}
+
+.page {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 15px;
+    background-color: #565254;
+/*    9C0D38
+        3F826D   
+    704C5E
+*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: none;
+    
+/*    position: absolute;*/
+/*    width: 100%;*/
+    min-height: 100vh;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease-in
+}
+
+
+
+.page.active {
+    background-color: #1F2833;
+    display: block;
+    z-index: 100;
+    opacity: 1
+        
+/*        #E54B4B */
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #F7F7FF;
+    padding: 0.5rem ;
+    margin: 0.55rem 0;
+    margin-left: -25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: #F7F7FF;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+.people-list-view li {
+    padding-bottom: 25px;
+}
+
+.gift-list-view p {
+    margin: 0.5rem 0;
+}
+
+
+.form-row {
+    background-color: #F7F7FF;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.form-row:first-child {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-row:nth-child(2n) {
+    text-align: center;
+}
+
+label {
+    font-family: 'Fira Sans', sans-serif;
+    margin-right: 50%;
+}
+
+input {
+    width: 78%;
+    border: 1px solid #ccc;
+    outline: 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+input[type="number"] {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 10px;
+    font-size: 25px;
+    width: 20%; 
+    text-align: center;
+}
+
+
+.center-button {
+    text-align:center;
+    margin:auto;
+}
+
+
+button {
+/*    background-color: #F7EF81;*/
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    background-color: #64B6AC;
+    box-shadow: 0px 5px 0px 0px #45A29E;
+    color: white;
+    font-size: 15px;
+    border-color: #64B6AC;
+    
+    
+/*    
+    bc: #e67e22
+    shadow: #CD6509
+    */
+}
+
+#gift-list p {
+    text-align: center;
+}
+
+.people-list-view h1 {
+    margin-bottom: 0;
+}
+
+.people-list-view p {
+    margin-top: 0.5rem;
+}
+
+.people-list-view button {
+    width: 60%;
+}
+
+#gift-list li {
+    border-bottom: solid #64B6AC 10px;
+}
+
+.gift-list-view button {
+    width: 20%;
+    background-color: #E54B4B;
+    box-shadow: 0px 5px 0px 0px #BC3E3E;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    
+    
+}
+
+#gift-list div {
+    text-align: center;
+}
+
+.gift-title {
+    color: black;
+    text-align: center;
+}
+
+.gift-price {
+    font-weight: 700;
+}
+
+.gift-url {
+/*    text-decoration-line: none;*/
+    text-align: center;
+    color: #777
+}
